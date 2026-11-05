@@ -1,0 +1,39 @@
+name: Appeal
+description: Request removal from the blocklist. No evidence or ownership proof required.
+title: "[APPEAL] "
+labels: ["appeal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Send the domain and a short explanation. No evidence or proof of ownership is required.
+        Screenshots and links are optional; we review the listing ourselves.
+        Prefer to submit without a GitHub account? Use the [appeals form](https://phishdestroy.io/appeals/).
+
+  - type: textarea
+    id: domains
+    attributes:
+      label: Blocked domains
+      description: One per line
+      placeholder: |
+        https://my-site.com
+        my-domain.org
+    validations:
+      required: true
+  
+  - type: textarea
+    id: reason
+    attributes:
+      label: Short explanation
+      description: Tell us what you think is wrong with the listing. A few words are enough; no evidence is required.
+      placeholder: This domain appears to be listed by mistake. Please review it.
+    validations:
+      required: true
+  
+  - type: input
+    id: contact
+    attributes:
+      label: Contact email (optional)
+      placeholder: admin@domain.com
+    validations:
+      required: false
