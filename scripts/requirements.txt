@@ -1,4 +1,4 @@
-requests==2.33.1
-dnspython==2.9.0
-tqdm==4.67.3
-tldextract==5.3.1
+requests==2.34.2
+dnspython==2.9.1
+tqdm==4.70.1
+tldextract==5.4.0
